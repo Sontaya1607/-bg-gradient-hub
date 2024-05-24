@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --ds-background-100: #0A0A0A;
+  --ds-background-200: #000;
+  --ds-gray-900: #A1A1A1;
+  --ds-gray-1000: #EDEDED;
+
+  color: var(--ds-gray-1000);
+  background-color: var(--ds-background-200);
+  font-size: 16px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ds-background-100: #FFF;
+    --ds-background-200: #FAFAFA;
+    --ds-gray-900: #666;
+    --ds-gray-1000: #171717;
+  }
+}
